@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/drood87/fylo-dark-theme/issues"
   },
-  "homepage": "https://github.com/drood87/fylo-dark-theme#readme"
+  "homepage": "https://github.com/drood87/fylo-dark-theme#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
