@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.4rem;
+  font-size: $default-font-size;
   font-weight: 400;
   color: $color-white;
 }
@@ -18,6 +18,6 @@ body {
   }
 
   &--tertiary {
-    font-size: 1.4rem;
+    font-size: $default-font-size;
   }
 }
