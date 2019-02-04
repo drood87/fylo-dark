@@ -3,3 +3,15 @@ body {
   font-weight: 400;
   color: $color-white;
 }
+
+.heading-primary {
+  font-family: "Raleway", sans-serif;
+
+  &--main {
+    font-weight: 400;
+  }
+
+  &--sub {
+    font-weight: 700;
+  }
+}
