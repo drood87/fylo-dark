@@ -1,28 +1,28 @@
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: $default-font-size;
-  font-weight: 400;
-  color: $color-white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: var(--default-font-size);
+	font-weight: 400;
+	color: var(--color-white);
 }
 
 .heading {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 
-  &--primary {
-    font-size: 4rem;
-  }
+	&--primary {
+		font-size: 4rem;
+	}
 
-  &--secondary {
-    font-size: 3rem;
-  }
+	&--secondary {
+		font-size: 3rem;
+	}
 
-  &--tertiary {
-    font-size: $default-font-size;
-  }
+	&--tertiary {
+		font-size: var(--default-font-size);
+	}
 }
 
 .paragraph {
-  font-size: $default-font-size;
-  margin-bottom: 3rem;
+	font-size: var(--default-font-size);
+	margin-bottom: 3rem;
 }
