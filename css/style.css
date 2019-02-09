@@ -1,10 +1,10 @@
 :root {
-  --color-blue-dark-1: #728097;
-  --color-blue-dark-2: #181f2a;
-  --color-blue-dark-3: #0b1523;
-  --color-blue-dark-4: #202a3c;
-  --color-cyan: #65e2d9;
-  --color-blue: #339ecc;
+  --color-blue-dark-1: hsl(217, 28%, 15%);
+  --color-blue-dark-2: hsl(218, 28%, 13%);
+  --color-blue-dark-3: hsl(216, 53%, 9%);
+  --color-blue-dark-4: hsl(219, 30%, 18%);
+  --color-cyan: hsl(176, 68%, 64%);
+  --color-blue: hsl(198, 60%, 50%);
   --color-white: #fff;
   --default-font-size: 1.8rem;
   --box-shadow-hover: 0 3rem 10rem rgba(0, 0, 0, 0.3);
@@ -37,8 +37,11 @@ body {
   word-spacing: 5px;
   margin-bottom: 3rem; }
 
-.paragraph {
-  font-size: var(--default-font-size);
+.heading-tertiary {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  word-spacing: 5px;
   margin-bottom: 3rem; }
 
 .btn, .btn:link, .btn:visited {
@@ -78,8 +81,11 @@ body {
   transition: all 0.4s; }
 
 .header {
-  min-height: 100vh;
-  background-color: var(--color-blue-dark-1); }
+  background-color: var(--color-blue-dark-1);
+  background-image: url(/images/bg-curvy-desktop.svg);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat; }
   .header__intro {
     display: flex;
     flex-direction: column;
@@ -92,16 +98,8 @@ body {
     z-index: 100; }
   .header__paragraph {
     max-width: 54rem;
-    margin: 0 auto 3rem auto; }
-  .header:after {
-    content: '';
-    position: absolute;
-    background: url(/images/bg-curvy-desktop.svg) bottom center;
-    background-repeat: no-repeat;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+    margin: 0 auto 3rem auto;
+    z-index: 100; }
 
 .logo-box {
   display: flex;
@@ -126,11 +124,12 @@ body {
     display: inline-block;
     text-decoration: none;
     color: var(--color-white);
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-blue-dark-2) 50%);
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-blue) 50%);
     background-size: 250%;
     margin-right: 5rem;
     padding: 1.2rem;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    border-radius: 10px; }
   .nav-bar__link:hover {
     transform: translateY(-2px);
     background-position: 100%;
@@ -140,5 +139,5 @@ body {
     box-shadow: var(--box-shadow-active); }
 
 .section-features {
-  height: 50rem;
-  background-color: var(--color-blue-dark-2); }
+  background-color: var(--color-blue-dark-2);
+  padding: 20rem 0; }

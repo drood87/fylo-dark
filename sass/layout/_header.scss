@@ -1,6 +1,10 @@
 .header {
-	min-height: 100vh;
+	// min-height: 100vh;
 	background-color: var(--color-blue-dark-1);
+	background-image: url(/images/bg-curvy-desktop.svg);
+	background-position: bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
 
 	&__intro {
 		display: flex;
@@ -19,17 +23,6 @@
 	&__paragraph {
 		max-width: 54rem;
 		margin: 0 auto 3rem auto;
-	}
-
-	&:after {
-		content: '';
-		position: absolute;
-		background: url(/images/bg-curvy-desktop.svg) bottom center;
-		background-repeat: no-repeat;
-		top: 100%;
-		left: 0;
-		width: 100%;
-
-		height: 100%;
+		z-index: 100;
 	}
 }

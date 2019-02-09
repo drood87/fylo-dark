@@ -28,11 +28,12 @@
 			display: inline-block;
 			text-decoration: none;
 			color: var(--color-white);
-			background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-blue-dark-2) 50%);
+			background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-blue) 50%);
 			background-size: 250%;
 			margin-right: 5rem;
 			padding: 1.2rem;
 			transition: all 0.2s;
+			border-radius: 10px;
 		}
 
 		&:hover {
