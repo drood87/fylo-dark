@@ -40,9 +40,12 @@ body {
 .heading-tertiary {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   word-spacing: 5px;
-  margin-bottom: 3rem; }
+  margin-bottom: 1.4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -79,6 +82,26 @@ body {
   width: 100%;
   z-index: -1;
   transition: all 0.4s; }
+
+.feature-box {
+  text-align: center;
+  max-width: 40rem;
+  transition: all 0.4s;
+  padding: 5rem;
+  border-radius: 5px; }
+  .feature-box__text {
+    font-size: 1.5rem; }
+  .feature-box:hover {
+    transform: translateY(-1rem);
+    background-color: var(--color-blue-dark-4);
+    box-shadow: var(--box-shadow-hover); }
+
+.feature-container {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-gap: 15rem;
+  justify-content: center;
+  justify-items: center; }
 
 .header {
   background-color: var(--color-blue-dark-1);

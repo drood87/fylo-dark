@@ -1,6 +1,17 @@
 .feature-box {
-	&__icon {
-	}
+	text-align: center;
+	max-width: 40rem;
+	transition: all 0.4s;
+	padding: 2rem;
+	border-radius: 5px;
+
 	&__text {
+		font-size: 1.5rem;
+	}
+
+	&:hover {
+		transform: translateY(-1rem);
+		background-color: var(--color-blue-dark-4);
+		box-shadow: var(--box-shadow-hover);
 	}
 }
