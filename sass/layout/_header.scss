@@ -1,10 +1,13 @@
 .header {
-	// min-height: 100vh;
 	background-color: var(--color-blue-dark-1);
 	background-image: url(/images/bg-curvy-desktop.svg);
 	background-position: bottom;
 	background-size: contain;
 	background-repeat: no-repeat;
+
+	&__illustration {
+		margin-bottom: 6rem;
+	}
 
 	&__intro {
 		display: flex;
@@ -15,7 +18,7 @@
 	}
 
 	&__text-box {
-		max-width: 60%;
+		max-width: 65%;
 		text-align: center;
 		z-index: 100;
 	}

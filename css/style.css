@@ -28,7 +28,7 @@ body {
   font-size: var(--default-font-size);
   font-weight: 400;
   color: var(--color-white);
-  line-height: 1.7; }
+  line-height: 1.5; }
 
 .heading-primary {
   font-family: 'Raleway', sans-serif;
@@ -83,11 +83,47 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
+.btn-small, .btn-small:link, .btn-small:visited {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-cyan);
+  border-bottom: 1px solid currentColor;
+  position: relative;
+  transition: all 0.3s; }
+
+.btn-small::before {
+  content: '';
+  background-color: var(--color-cyan);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s; }
+
+.btn-small:hover {
+  z-index: 2;
+  color: white;
+  padding: 1rem;
+  box-shadow: var(--box-shadow-hover); }
+
+.btn-small:active {
+  transform: translateY(-1px);
+  box-shadow: var(--box-shadow-active); }
+
+.btn-small:hover::before {
+  top: 0; }
+
+.btn-small__icon-arrow {
+  margin-left: 4px; }
+
 .feature-box {
   text-align: center;
-  max-width: 40rem;
+  max-width: 41rem;
   transition: all 0.4s;
-  padding: 5rem;
+  padding: 2rem;
   border-radius: 5px; }
   .feature-box__text {
     font-size: 1.5rem; }
@@ -95,6 +131,17 @@ body {
     transform: translateY(-1rem);
     background-color: var(--color-blue-dark-4);
     box-shadow: var(--box-shadow-hover); }
+
+.cta {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: space-between; }
+  .cta__textbox {
+    max-width: 40%; }
+  .cta__paragraph {
+    font-size: 1.5rem;
+    margin-bottom: 3rem; }
 
 .feature-container {
   display: grid;
@@ -109,6 +156,8 @@ body {
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat; }
+  .header__illustration {
+    margin-bottom: 6rem; }
   .header__intro {
     display: flex;
     flex-direction: column;
@@ -116,7 +165,7 @@ body {
     width: 80%;
     margin: 0 auto; }
   .header__text-box {
-    max-width: 60%;
+    max-width: 65%;
     text-align: center;
     z-index: 100; }
   .header__paragraph {
@@ -136,7 +185,8 @@ body {
   display: flex;
   justify-content: space-between;
   height: 10rem;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  margin-bottom: 5rem; }
   .nav-bar__list {
     display: flex;
     align-items: center;
@@ -161,6 +211,7 @@ body {
     transform: translateY(-1px);
     box-shadow: var(--box-shadow-active); }
 
-.section-features {
+.section-features,
+.section-cta {
   background-color: var(--color-blue-dark-2);
-  padding: 20rem 0; }
+  padding: 20rem 0 0 0; }
