@@ -236,6 +236,16 @@ body {
     transform: translateY(-1px);
     box-shadow: var(--box-shadow-active); }
 
+.testimonials {
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.icon__quotes {
+  position: absolute;
+  left: 8rem;
+  top: 18.7rem; }
+
 .section-features,
 .section-cta,
 .section-testimonials {
