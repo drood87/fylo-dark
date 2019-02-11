@@ -1,18 +1,37 @@
 .testimonials-box {
-  &__text {
-    font-size: 1.5rem;
-  }
+	background-color: var(--color-blue-dark-4);
+	margin: 3rem;
+	padding: 3rem;
+	border-radius: 5px;
+	width: 27%;
 
-  &__shape {
-  }
+	&__text {
+		font-size: 1.5rem;
+	}
 
-  &__portrait {
-    float: left;
-  }
+	&__shape {
+	}
 
-  &__caption {
-  }
+	&__portrait {
+		float: left;
+		margin-right: 2rem;
+		border-radius: 50%;
+		height: 3.5rem;
+		width: 3.5rem;
+	}
 
-  &__position {
-  }
+	&__name {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__caption {
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	&__position {
+		font-size: 1.2rem;
+	}
 }
