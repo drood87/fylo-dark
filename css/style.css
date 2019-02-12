@@ -47,6 +47,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 2.5rem !important; }
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   display: inline-block;
@@ -133,10 +136,13 @@ body {
     box-shadow: var(--box-shadow-hover); }
 
 .signup {
-  max-width: 75%;
-  background-color: var(--color-dark-blue-4);
+  max-width: 65%;
+  background-color: var(--color-blue-dark-4);
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-hover); }
   .signup__text {
     font-size: 2rem; }
 
