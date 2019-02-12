@@ -1,11 +1,12 @@
 .testimonials {
-	display: flex;
-	justify-content: center;
-	position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-shadow: var(--box-shadow-hover);
 }
 
 .icon__quotes {
-	position: absolute;
-	left: 8rem;
-	top: 18.7rem;
+  position: absolute;
+  left: 8rem;
+  top: 15.7rem;
 }

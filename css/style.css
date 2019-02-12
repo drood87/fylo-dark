@@ -7,7 +7,7 @@
   --color-blue: hsl(198, 60%, 50%);
   --color-white: #fff;
   --default-font-size: 1.8rem;
-  --box-shadow-hover: 0 3rem 10rem rgba(0, 0, 0, 0.3);
+  --box-shadow-hover: 0 3rem 3rem rgba(0, 0, 0, 0.3);
   --box-shadow-active: 0 1rem 5rem rgba(0, 0, 0, 0.3); }
 
 * {
@@ -132,6 +132,14 @@ body {
     background-color: var(--color-blue-dark-4);
     box-shadow: var(--box-shadow-hover); }
 
+.signup {
+  max-width: 75%;
+  background-color: var(--color-dark-blue-4);
+  margin: 0 auto;
+  text-align: center; }
+  .signup__text {
+    font-size: 2rem; }
+
 .testimonials-box {
   background-color: var(--color-blue-dark-4);
   margin: 3rem;
@@ -239,16 +247,21 @@ body {
 .testimonials {
   display: flex;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  box-shadow: var(--box-shadow-hover); }
 
 .icon__quotes {
   position: absolute;
   left: 8rem;
-  top: 18.7rem; }
+  top: 15.7rem; }
 
 .section-features,
 .section-cta,
-.section-testimonials {
+.section-testimonials,
+.section-signup {
   background-color: var(--color-blue-dark-2);
-  padding: 20rem 0 0 0;
+  padding: 17rem 0 0 0;
   position: relative; }
+
+.section-features {
+  padding-bottom: 5rem; }
