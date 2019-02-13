@@ -27,9 +27,6 @@
 		margin-right: 2rem;
 	}
 
-	&__contact {
-	}
-
 	&__phone,
 	&__mail {
 		display: flex;
@@ -40,19 +37,10 @@
 		}
 	}
 
-	&__nav {
-	}
-
 	&__list {
 		list-style: none;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 2rem 8rem;
-	}
-
-	&__item {
-	}
-
-	&__social {
 	}
 }
