@@ -2,11 +2,17 @@
 .section-cta,
 .section-testimonials,
 .section-signup {
-  background-color: var(--color-blue-dark-2);
-  padding: 17rem 0 0 0;
-  position: relative;
+	background-color: var(--color-blue-dark-2);
+	padding: 17rem 0 0 0;
+	position: relative;
 }
 
 .section-features {
-  padding-bottom: 5rem;
+	padding-bottom: 5rem;
+}
+
+.footer {
+	background-color: var(--color-blue-dark-3);
+	padding: 24rem 0 0 0;
+	position: relative;
 }

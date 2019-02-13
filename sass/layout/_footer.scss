@@ -1,0 +1,58 @@
+.footer__logo-box {
+	padding: 5rem;
+}
+
+.footer-box {
+	font-size: 1.5rem;
+	display: grid;
+	grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+	grid-gap: 5rem;
+	padding: 5rem;
+	justify-items: center;
+
+	&__location {
+		display: flex;
+		position: relative;
+	}
+
+	&__icon-box--location {
+		position: relative;
+		top: 3px;
+	}
+
+	&__icon {
+		width: 2rem;
+		height: 2rem;
+		fill: var(--color-white);
+		margin-right: 2rem;
+	}
+
+	&__contact {
+	}
+
+	&__phone,
+	&__mail {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__nav {
+	}
+
+	&__list {
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem 8rem;
+	}
+
+	&__item {
+	}
+
+	&__social {
+	}
+}

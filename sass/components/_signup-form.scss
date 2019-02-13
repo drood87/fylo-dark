@@ -1,17 +1,35 @@
 .signup {
-	max-width: 65%;
+	max-width: 57%;
 	background-color: var(--color-blue-dark-4);
 	margin: 0 auto;
 	text-align: center;
 	padding: 5rem;
 	border-radius: 5px;
 	box-shadow: var(--box-shadow-hover);
+	position: relative;
+	top: 15rem;
+	z-index: 100;
 
 	&__text {
-		font-size: 2rem;
+		font-size: 1.6rem;
 	}
 	&__form {
+		display: flex;
 	}
 	&__input {
+		flex: 1 0 60%;
+		margin-right: 5rem;
+		border-radius: 100px;
+		outline: none;
+		border: none;
+		padding: 2rem 2rem 2rem 5rem;
+		color: var(--color-blue-dark-1);
+		font-family: inherit;
+
+		&::-webkit-input-placeholder {
+			font-weight: 100;
+			color: var(--color-grey-light-4);
+		}
 	}
 }
+// BUTTON STYLES IN .button.scss
