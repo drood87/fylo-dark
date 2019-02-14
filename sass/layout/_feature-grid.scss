@@ -4,4 +4,8 @@
 	grid-gap: 15rem;
 	justify-content: center;
 	justify-items: center;
+
+	@include respond(phone) {
+		grid-template-columns: 100%;
+	}
 }

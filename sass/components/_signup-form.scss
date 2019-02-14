@@ -1,5 +1,5 @@
 .signup {
-	max-width: 57%;
+	max-width: 60%;
 	background-color: var(--color-blue-dark-4);
 	margin: 0 auto;
 	text-align: center;
@@ -17,8 +17,8 @@
 		display: flex;
 	}
 	&__input {
-		flex: 1 0 60%;
-		margin-right: 5rem;
+		flex: 1 0 55%;
+		margin-right: 3.75rem;
 		border-radius: 100px;
 		outline: none;
 		border: none;

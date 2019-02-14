@@ -5,8 +5,14 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 
+	@include respond(phone) {
+		background-image: url(/images/bg-curvy-mobile.svg);
+	}
+
 	&__illustration {
 		margin-bottom: 6rem;
+		width: 80vw;
+		height: auto;
 	}
 
 	&__intro {
@@ -21,6 +27,10 @@
 		max-width: 65%;
 		text-align: center;
 		z-index: 100;
+
+		@include respond(phone) {
+			max-width: 90%;
+		}
 	}
 
 	&__paragraph {

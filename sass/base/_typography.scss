@@ -12,6 +12,10 @@ body {
 	font-size: 4rem;
 	word-spacing: 5px;
 	margin-bottom: 3rem;
+
+	@include respond(phone) {
+		font-size: 3rem;
+	}
 }
 
 .heading-secondary {

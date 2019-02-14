@@ -1,10 +1,15 @@
 .section-features,
 .section-cta,
-.section-testimonials,
-.section-signup {
-	background-color: var(--color-blue-dark-2);
+.section-testimonials {
 	padding: 17rem 0 0 0;
 	position: relative;
+	background-color: var(--color-blue-dark-2);
+}
+
+.section-signup {
+	padding-top: 1rem;
+	position: relative;
+	background-color: var(--color-blue-dark-2);
 }
 
 .section-features {

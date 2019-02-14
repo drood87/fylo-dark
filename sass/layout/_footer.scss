@@ -42,5 +42,22 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 2rem 8rem;
+		color: var(--color-white);
+	}
+
+	&__link {
+		color: var(--color-white);
+		&:link,
+		&:active {
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		&:hover {
+			transform: scale(1.1) rotate(-5deg);
+			background-color: var(--color-blue);
+			color: var(--color-white);
+			box-shadow: var(--box-shadow-hover);
+		}
 	}
 }

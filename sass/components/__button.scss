@@ -73,8 +73,8 @@
 	&:hover {
 		z-index: 2;
 		color: white;
-		padding: 0.4rem;
 		box-shadow: var(--box-shadow-hover);
+		transform: scale(1.1);
 	}
 
 	&:active {
@@ -92,11 +92,12 @@
 }
 
 .btn--smaller {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	font-weight: 700;
-	padding: 0 5rem 0 5rem;
+	padding: 0 5.5rem 0 5.5rem;
 	text-transform: capitalize;
 	font-family: 'Raleway', sans-serif;
+	cursor: pointer;
 
 	&::after {
 		content: '';
