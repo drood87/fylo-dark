@@ -10,11 +10,20 @@
 	top: 15rem;
 	z-index: 100;
 
+	@include respond(phone) {
+		max-width: 90%;
+	}
+
 	&__text {
 		font-size: 1.6rem;
+
+		@include respond(phone) {
+			font-size: 2rem;
+		}
 	}
 	&__form {
 		display: flex;
+		flex-wrap: wrap;
 	}
 	&__input {
 		flex: 1 0 55%;
@@ -25,6 +34,11 @@
 		padding: 2rem 2rem 2rem 5rem;
 		color: var(--color-blue-dark-1);
 		font-family: inherit;
+
+		@include respond(phone) {
+			flex: 1 0 100%;
+			margin-bottom: 2.25rem;
+		}
 
 		&::-webkit-input-placeholder {
 			font-weight: 100;

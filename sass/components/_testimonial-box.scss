@@ -5,11 +5,17 @@
 	border-radius: 5px;
 	width: 27%;
 
-	&__text {
-		font-size: 1.5rem;
+	@include respond(phone) {
+		width: 90%;
+		padding: 4rem;
 	}
 
-	&__shape {
+	&__text {
+		font-size: 1.5rem;
+
+		@include respond(phone) {
+			font-size: 2rem;
+		}
 	}
 
 	&__portrait {
@@ -18,6 +24,11 @@
 		border-radius: 50%;
 		height: 3.5rem;
 		width: 3.5rem;
+
+		@include respond(phone) {
+			height: 5.5rem;
+			width: 5.5rem;
+		}
 	}
 
 	&__name {
@@ -29,9 +40,17 @@
 	&__caption {
 		font-size: 1.2rem;
 		font-weight: 700;
+
+		@include respond(phone) {
+			font-size: 2rem;
+		}
 	}
 
 	&__position {
 		font-size: 1.2rem;
+
+		@include respond(phone) {
+			font-size: 1.75rem;
+		}
 	}
 }

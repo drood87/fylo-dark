@@ -7,11 +7,21 @@
 
 	&__text {
 		font-size: 1.5rem;
+
+		@include respond(phone) {
+			font-size: 2rem;
+		}
 	}
 
 	&:hover {
 		transform: translateY(-1rem);
 		background-color: var(--color-blue-dark-4);
 		box-shadow: var(--box-shadow-hover);
+
+		@include respond(phone) {
+			transform: none;
+			background-color: inherit;
+			box-shadow: none;
+		}
 	}
 }

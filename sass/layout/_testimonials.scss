@@ -1,12 +1,22 @@
 .testimonials {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  box-shadow: var(--box-shadow-hover);
+	display: flex;
+	justify-content: center;
+	position: relative;
+	box-shadow: var(--box-shadow-hover);
+
+	@include respond(phone) {
+		flex-direction: column;
+	}
 }
 
 .icon__quotes {
-  position: absolute;
-  left: 8rem;
-  top: 15.7rem;
+	position: absolute;
+	left: 8rem;
+	top: 15.7rem;
+
+	@include respond(phone) {
+		width: 5.5rem;
+		left: 3rem;
+		top: 15.7rem;
+	}
 }

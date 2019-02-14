@@ -17,9 +17,18 @@
 		transform: translateY(-3px);
 		box-shadow: 0 3rem 10rem rgba(0, 0, 0, 0.2);
 
+		@include respond(phone) {
+			transform: none;
+			box-shadow: none;
+		}
+
 		&::after {
 			transform: scaleX(1.5) scaleY(1.6);
 			opacity: 0;
+
+			@include respond(phone) {
+				transform: none;
+			}
 		}
 	}
 
@@ -68,6 +77,10 @@
 		left: 0;
 		z-index: -1;
 		transition: all 0.3s;
+
+		@include respond(phone) {
+			display: none;
+		}
 	}
 
 	&:hover {
@@ -75,6 +88,12 @@
 		color: white;
 		box-shadow: var(--box-shadow-hover);
 		transform: scale(1.1);
+
+		@include respond(phone) {
+			transform: none;
+			box-shadow: none;
+			color: var(--color-cyan);
+		}
 	}
 
 	&:active {
@@ -99,6 +118,12 @@
 	font-family: 'Raleway', sans-serif;
 	cursor: pointer;
 
+	@include respond(phone) {
+		font-size: 2rem;
+		padding: 2rem 2rem 2rem 2rem;
+		flex: 1 0 100%;
+	}
+
 	&::after {
 		content: '';
 		display: inline-block;
@@ -112,5 +137,9 @@
 		width: 100%;
 		z-index: -1;
 		transition: all 0.4s;
+
+		@include respond(phone) {
+			display: none;
+		}
 	}
 }
