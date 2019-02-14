@@ -3,7 +3,7 @@
 
 // --> flexible breakpoints where layout breaks
 
-// 600 - 900px: 	Table portrait
+// 600 - 900px: 	Tablet portrait
 // 900 - 1200px:	Tablet landscape
 // (1200 - 1800) is where our normal styles apply
 // 1800px + :			Big Desktop
@@ -24,6 +24,27 @@
 	@if $breakpoint == phone {
 		@media only screen and (max-width: 23.5em) {
 			//max-width <= 375px
+			@content;
+		}
+	}
+
+	// @if $breakpoint == smaller-size {
+	// 	@media only screen and (max-width: 55em) {
+	// 		//max- width: 880px
+	// 		@content;
+	// 	}
+	// }
+
+	@if $breakpoint == small-size {
+		@media only screen and (max-width: 62.5em) {
+			//max-width: 1000px
+			@content;
+		}
+	}
+
+	@if $breakpoint == medium-size {
+		@media only screen and (max-width: 79em) {
+			// max-width <= 1265
 			@content;
 		}
 	}

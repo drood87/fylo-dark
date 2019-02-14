@@ -118,6 +118,10 @@
 	font-family: 'Raleway', sans-serif;
 	cursor: pointer;
 
+	@include respond(medium-size) {
+		font-size: 1.3rem;
+	}
+
 	@include respond(phone) {
 		font-size: 2rem;
 		padding: 2rem 2rem 2rem 2rem;

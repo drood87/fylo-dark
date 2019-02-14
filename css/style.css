@@ -26,6 +26,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
   @media only screen and (max-width: 23.5em) {
     html {
       font-size: 37.5%; } }
@@ -170,6 +173,9 @@ body {
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   cursor: pointer; }
+  @media only screen and (max-width: 79em) {
+    .btn--smaller {
+      font-size: 1.3rem; } }
   @media only screen and (max-width: 23.5em) {
     .btn--smaller {
       font-size: 2rem;
@@ -233,8 +239,10 @@ body {
       .signup__text {
         font-size: 2rem; } }
   .signup__form {
-    display: flex;
-    flex-wrap: wrap; }
+    display: flex; }
+    @media only screen and (max-width: 23.5em) {
+      .signup__form {
+        flex-wrap: wrap; } }
   .signup__input {
     flex: 1 0 55%;
     margin-right: 3.75rem;
@@ -298,6 +306,12 @@ body {
   max-width: 80%;
   margin: 0 auto;
   justify-content: space-between; }
+  @media only screen and (max-width: 79em) {
+    .cta {
+      max-width: 100%; } }
+  @media only screen and (max-width: 62.5em) {
+    .cta {
+      max-width: 100%; } }
   @media only screen and (max-width: 23.5em) {
     .cta {
       display: block;
@@ -402,10 +416,11 @@ body {
   @media only screen and (max-width: 23.5em) {
     .header {
       background-image: url(/images/bg-curvy-mobile.svg); } }
-  .header__illustration {
-    margin-bottom: 6rem;
-    width: 80vw;
-    height: auto; }
+  @media only screen and (max-width: 23.5em) {
+    .header__illustration {
+      margin-bottom: 6rem;
+      width: 80vw;
+      height: auto; } }
   .header__intro {
     display: flex;
     flex-direction: column;

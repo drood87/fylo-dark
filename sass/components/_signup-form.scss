@@ -23,7 +23,10 @@
 	}
 	&__form {
 		display: flex;
-		flex-wrap: wrap;
+
+		@include respond(phone) {
+			flex-wrap: wrap;
+		}
 	}
 	&__input {
 		flex: 1 0 55%;

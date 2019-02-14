@@ -10,9 +10,11 @@
 	}
 
 	&__illustration {
-		margin-bottom: 6rem;
-		width: 80vw;
-		height: auto;
+		@include respond(phone) {
+			margin-bottom: 6rem;
+			width: 80vw;
+			height: auto;
+		}
 	}
 
 	&__intro {

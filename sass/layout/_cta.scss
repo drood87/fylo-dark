@@ -4,6 +4,14 @@
 	margin: 0 auto;
 	justify-content: space-between;
 
+	@include respond(medium-size) {
+		max-width: 100%;
+	}
+
+	@include respond(small-size) {
+		max-width: 100%;
+	}
+
 	@include respond(phone) {
 		display: block;
 		max-width: 90%;
