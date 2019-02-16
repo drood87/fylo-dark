@@ -13,10 +13,16 @@ body {
 	word-spacing: 5px;
 	margin-bottom: 3rem;
 
+	////////////////////////////////////
+	// MEDIA QUERIES
+
 	@include respond(phone) {
 		font-size: 3rem;
 	}
 }
+
+////////////////////////////////////
+//
 
 .heading-secondary {
 	font-family: 'Raleway', sans-serif;
@@ -32,6 +38,9 @@ body {
 	font-size: 1.6rem;
 	word-spacing: 5px;
 	margin-bottom: 1.4rem;
+
+	////////////////////////////////////
+	// MEDIA QUERIES
 
 	@include respond(phone) {
 		font-size: 2.5rem;

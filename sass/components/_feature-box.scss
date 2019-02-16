@@ -8,15 +8,24 @@
 	&__text {
 		font-size: 1.5rem;
 
+		////////////////////////////////////
+		// MEDIA QUERIES
+
 		@include respond(phone) {
 			font-size: 2rem;
 		}
 	}
 
+	////////////////////////////////////
+	//
+
 	&:hover {
 		transform: translateY(-1rem);
 		background-color: var(--color-blue-dark-4);
 		box-shadow: var(--box-shadow-hover);
+
+		////////////////////////////////////
+		// MEDIA QUERIES
 
 		@include respond(phone) {
 			transform: none;

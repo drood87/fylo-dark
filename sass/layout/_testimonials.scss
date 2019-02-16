@@ -4,15 +4,23 @@
 	position: relative;
 	box-shadow: var(--box-shadow-hover);
 
+	////////////////////////////////////
+	// MEDIA QUERIES
+
 	@include respond(phone) {
 		flex-direction: column;
 	}
 }
 
+////////////////////////////////////
+//
 .icon__quotes {
 	position: absolute;
 	left: 8rem;
 	top: 15.7rem;
+
+	////////////////////////////////////
+	// MEDIA QUERIES
 
 	@include respond(phone) {
 		width: 5.5rem;

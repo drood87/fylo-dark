@@ -5,6 +5,9 @@
 	justify-content: center;
 	justify-items: center;
 
+	////////////////////////////////////
+	// MEDIA QUERIES
+
 	@include respond(phone) {
 		grid-template-columns: 100%;
 	}

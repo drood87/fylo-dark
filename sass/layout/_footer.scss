@@ -1,6 +1,9 @@
 .footer__logo-box {
 	padding: 5rem;
 
+	////////////////////////////////////
+	// MEDIA QUERIES
+
 	@include respond(phone) {
 		padding: 2rem 0 2rem 5rem;
 	}
@@ -12,6 +15,9 @@
 	}
 }
 
+////////////////////////////////////
+//
+
 .footer-box {
 	font-size: 1.5rem;
 	display: grid;
@@ -20,19 +26,31 @@
 	padding: 5rem;
 	justify-items: center;
 
+	////////////////////////////////////
+	// MEDIA QUERIES
+
 	@include respond(phone) {
 		display: block;
 		font-size: 2rem;
 	}
 
+	////////////////////////////////////
+	//
+
 	&__location {
 		display: flex;
 		position: relative;
+
+		////////////////////////////////////
+		// MEDIA QUERIES
 
 		@include respond(phone) {
 			margin-bottom: 2rem;
 		}
 	}
+
+	////////////////////////////////////
+	//
 
 	&__icon-box--location {
 		position: relative;
@@ -63,10 +81,16 @@
 		grid-gap: 2rem 8rem;
 		color: var(--color-white);
 
+		////////////////////////////////////
+		// MEDIA QUERIES
+
 		@include respond(phone) {
 			display: none;
 		}
 	}
+
+	////////////////////////////////////
+	//
 
 	&__link {
 		color: var(--color-white);
@@ -84,6 +108,9 @@
 			box-shadow: var(--box-shadow-hover);
 		}
 	}
+
+	////////////////////////////////////
+	// MEDIA QUERIES
 
 	&__social {
 		@include respond(phone) {
