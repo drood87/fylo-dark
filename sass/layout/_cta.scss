@@ -4,6 +4,9 @@
 	margin: 0 auto;
 	justify-content: space-between;
 
+	////////////////////////////////////
+	// MEDIA QUERIES
+
 	@include respond(medium-size) {
 		max-width: 100%;
 	}
@@ -14,6 +17,7 @@
 
 	@include respond(smaller-size-55) {
 		flex-direction: column;
+		text-align: center;
 	}
 
 	@include respond(phone) {
@@ -22,17 +26,17 @@
 	}
 
 	&__illustration {
-		@include respond(phone) {
-		}
-
 		@include respond(smaller-size-55) {
 			width: 80vw;
 			display: block;
-			margin: 0 auto 10rem auto;
+			margin: 0 auto;
 			width: 80vw;
 			height: auto;
 		}
 	}
+
+	/////////////////////////////////////////
+	// CHILD STYLES
 
 	&__textbox {
 		max-width: 40%;
@@ -40,6 +44,7 @@
 
 		@include respond(smaller-size-55) {
 			max-width: 65%;
+			margin: 0 auto;
 		}
 
 		@include respond(phone) {
@@ -49,7 +54,7 @@
 
 	&__paragraph {
 		font-size: 1.5rem;
-		margin-bottom: 3rem;
+		padding-bottom: 3rem;
 
 		@include respond(smaller-size-55) {
 			font-size: 1.75rem;

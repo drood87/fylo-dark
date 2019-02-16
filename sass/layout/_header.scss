@@ -10,6 +10,14 @@
 	}
 
 	&__illustration {
+		@include respond(smaller-size-55) {
+			width: 80vw;
+			display: block;
+			margin: 0 auto;
+			width: 80vw;
+			height: auto;
+		}
+
 		@include respond(phone) {
 			margin-bottom: 6rem;
 			width: 80vw;

@@ -1,18 +1,19 @@
 // MEDIA QUERIE MANAGER
-// 0 - 375px: 		Phone
+// 0 - 600px: 		Phone
+// 600 - 880: 	smaller
+// 880 - 1000px:	small
+//1000 - 1265px: medium
+// (above 1265px ) is where our normal styles apply
 
 // --> flexible breakpoints where layout breaks
 
-// 600 - 900px: 	Tablet portrait
-// 900 - 1200px:	Tablet landscape
-// (1200 - 1800) is where our normal styles apply
-// 1800px + :			Big Desktop
-
 //$breakpoint argument choices:
 // - phone
-// - tab-port
-// - tab-land
-// - big-desktop
+// - smaller-size-55
+// - small-size
+// - medium-size
+
+// --> above 1265px (medium-size) will be normal layout, developed for 1440px desktops
 
 // ORDER: Base + typographie > general layout + grid > page layout > components
 
