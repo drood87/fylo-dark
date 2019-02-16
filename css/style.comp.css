@@ -326,7 +326,8 @@ body {
       max-width: 100%; } }
   @media only screen and (max-width: 55em) {
     .cta {
-      flex-direction: column; } }
+      flex-direction: column;
+      text-align: center; } }
   @media only screen and (max-width: 37.5em) {
     .cta {
       display: block;
@@ -335,7 +336,7 @@ body {
     .cta__illustration {
       width: 80vw;
       display: block;
-      margin: 0 auto 10rem auto;
+      margin: 0 auto;
       width: 80vw;
       height: auto; } }
   .cta__textbox {
@@ -343,13 +344,14 @@ body {
     align-self: center; }
     @media only screen and (max-width: 55em) {
       .cta__textbox {
-        max-width: 65%; } }
+        max-width: 65%;
+        margin: 0 auto; } }
     @media only screen and (max-width: 37.5em) {
       .cta__textbox {
         max-width: 100%; } }
   .cta__paragraph {
     font-size: 1.5rem;
-    margin-bottom: 3rem; }
+    padding-bottom: 3rem; }
     @media only screen and (max-width: 55em) {
       .cta__paragraph {
         font-size: 1.75rem; } }
@@ -439,6 +441,13 @@ body {
   @media only screen and (max-width: 37.5em) {
     .header {
       background-image: url(/images/bg-curvy-mobile.svg); } }
+  @media only screen and (max-width: 55em) {
+    .header__illustration {
+      width: 80vw;
+      display: block;
+      margin: 0 auto;
+      width: 80vw;
+      height: auto; } }
   @media only screen and (max-width: 37.5em) {
     .header__illustration {
       margin-bottom: 6rem;
