@@ -27,6 +27,10 @@
 		@include respond(phone) {
 			flex-wrap: wrap;
 		}
+
+		@include respond(smaller-size-55) {
+			flex-wrap: wrap;
+		}
 	}
 	&__input {
 		flex: 1 0 55%;
@@ -37,6 +41,11 @@
 		padding: 2rem 2rem 2rem 5rem;
 		color: var(--color-blue-dark-1);
 		font-family: inherit;
+
+		@include respond(smaller-size-55) {
+			margin-right: 0;
+			margin-bottom: 2rem;
+		}
 
 		@include respond(phone) {
 			flex: 1 0 100%;

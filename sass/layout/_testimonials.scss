@@ -19,4 +19,9 @@
 		left: 3rem;
 		top: 15.7rem;
 	}
+
+	@include respond(smaller-size-55) {
+		left: 4.75rem;
+		top: 14.7rem;
+	}
 }

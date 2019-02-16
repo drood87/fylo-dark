@@ -10,7 +10,7 @@
   --default-font-size: 1.8rem;
   --box-shadow-hover: 0 3rem 3rem rgba(0, 0, 0, 0.3);
   --box-shadow-active: 0 1rem 5rem rgba(0, 0, 0, 0.3); }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     :root {
       --default-font-size: 2rem; } }
 
@@ -29,7 +29,7 @@ html {
   @media only screen and (max-width: 62.5em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     html {
       font-size: 37.5%; } }
 
@@ -46,7 +46,7 @@ body {
   font-size: 4rem;
   word-spacing: 5px;
   margin-bottom: 3rem; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 3rem; } }
 
@@ -63,19 +63,19 @@ body {
   font-size: 1.6rem;
   word-spacing: 5px;
   margin-bottom: 1.4rem; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-tertiary {
       font-size: 2.5rem; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .u-margin-bottom-small {
       margin-bottom: 2.5rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 2.5rem !important; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .u-margin-bottom-medium {
       margin-bottom: 2.9rem !important; } }
 
@@ -93,14 +93,14 @@ body {
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 3rem 10rem rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .btn:hover {
       transform: none;
       box-shadow: none; } }
   .btn:hover::after {
     transform: scaleX(1.5) scaleY(1.6);
     opacity: 0; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .btn:hover::after {
         transform: none; } }
 
@@ -141,7 +141,7 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.3s; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .btn-small::before {
       display: none; } }
 
@@ -150,7 +150,7 @@ body {
   color: white;
   box-shadow: var(--box-shadow-hover);
   transform: scale(1.1); }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .btn-small:hover {
       transform: none;
       box-shadow: none;
@@ -176,10 +176,15 @@ body {
   @media only screen and (max-width: 79em) {
     .btn--smaller {
       font-size: 1.3rem; } }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 55em) {
+    .btn--smaller {
+      font-size: 1.75rem;
+      padding: 2rem;
+      flex: 1 0 100%; } }
+  @media only screen and (max-width: 37.5em) {
     .btn--smaller {
       font-size: 2rem;
-      padding: 2rem 2rem 2rem 2rem;
+      padding: 2rem;
       flex: 1 0 100%; } }
   .btn--smaller::after {
     content: '';
@@ -194,7 +199,7 @@ body {
     width: 100%;
     z-index: -1;
     transition: all 0.4s; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .btn--smaller::after {
         display: none; } }
 
@@ -206,14 +211,14 @@ body {
   border-radius: 5px; }
   .feature-box__text {
     font-size: 1.5rem; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .feature-box__text {
         font-size: 2rem; } }
   .feature-box:hover {
     transform: translateY(-1rem);
     background-color: var(--color-blue-dark-4);
     box-shadow: var(--box-shadow-hover); }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .feature-box:hover {
         transform: none;
         background-color: inherit;
@@ -230,17 +235,20 @@ body {
   position: relative;
   top: 15rem;
   z-index: 100; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .signup {
       max-width: 90%; } }
   .signup__text {
     font-size: 1.6rem; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .signup__text {
         font-size: 2rem; } }
   .signup__form {
     display: flex; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
+      .signup__form {
+        flex-wrap: wrap; } }
+    @media only screen and (max-width: 55em) {
       .signup__form {
         flex-wrap: wrap; } }
   .signup__input {
@@ -252,7 +260,11 @@ body {
     padding: 2rem 2rem 2rem 5rem;
     color: var(--color-blue-dark-1);
     font-family: inherit; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 55em) {
+      .signup__input {
+        margin-right: 0;
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
       .signup__input {
         flex: 1 0 100%;
         margin-bottom: 2.25rem; } }
@@ -266,13 +278,13 @@ body {
   padding: 3rem;
   border-radius: 5px;
   width: 27%; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .testimonials-box {
       width: 90%;
       padding: 4rem; } }
   .testimonials-box__text {
     font-size: 1.5rem; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .testimonials-box__text {
         font-size: 2rem; } }
   .testimonials-box__portrait {
@@ -281,7 +293,7 @@ body {
     border-radius: 50%;
     height: 3.5rem;
     width: 3.5rem; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .testimonials-box__portrait {
         height: 5.5rem;
         width: 5.5rem; } }
@@ -292,12 +304,12 @@ body {
   .testimonials-box__caption {
     font-size: 1.2rem;
     font-weight: 700; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .testimonials-box__caption {
         font-size: 2rem; } }
   .testimonials-box__position {
     font-size: 1.2rem; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .testimonials-box__position {
         font-size: 1.75rem; } }
 
@@ -312,12 +324,16 @@ body {
   @media only screen and (max-width: 62.5em) {
     .cta {
       max-width: 100%; } }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 55em) {
+    .cta {
+      flex-direction: column; } }
+  @media only screen and (max-width: 37.5em) {
     .cta {
       display: block;
       max-width: 90%; } }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 55em) {
     .cta__illustration {
+      width: 80vw;
       display: block;
       margin: 0 auto 10rem auto;
       width: 80vw;
@@ -325,13 +341,19 @@ body {
   .cta__textbox {
     max-width: 40%;
     align-self: center; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 55em) {
+      .cta__textbox {
+        max-width: 65%; } }
+    @media only screen and (max-width: 37.5em) {
       .cta__textbox {
         max-width: 100%; } }
   .cta__paragraph {
     font-size: 1.5rem;
     margin-bottom: 3rem; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 55em) {
+      .cta__paragraph {
+        font-size: 1.75rem; } }
+    @media only screen and (max-width: 37.5em) {
       .cta__paragraph {
         font-size: 2.25rem; } }
 
@@ -341,16 +363,16 @@ body {
   grid-gap: 15rem;
   justify-content: center;
   justify-items: center; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .feature-container {
       grid-template-columns: 100%; } }
 
 .footer__logo-box {
   padding: 5rem; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer__logo-box {
       padding: 2rem 0 2rem 5rem; } }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer__logo-box--small {
       height: 5rem; } }
 
@@ -361,14 +383,14 @@ body {
   grid-gap: 5rem;
   padding: 5rem;
   justify-items: center; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer-box {
       display: block;
       font-size: 2rem; } }
   .footer-box__location {
     display: flex;
     position: relative; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .footer-box__location {
         margin-bottom: 2rem; } }
   .footer-box__icon-box--location {
@@ -390,20 +412,21 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem 8rem;
     color: var(--color-white); }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .footer-box__list {
         display: none; } }
   .footer-box__link {
     color: var(--color-white); }
     .footer-box__link:link, .footer-box__link:active {
       text-decoration: none;
-      display: inline-block; }
+      display: inline-block;
+      transition: all 0.3s; }
     .footer-box__link:hover {
       transform: scale(1.1) rotate(-5deg);
       background-color: var(--color-blue);
       color: var(--color-white);
       box-shadow: var(--box-shadow-hover); }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer-box__social {
       display: none; } }
 
@@ -413,10 +436,10 @@ body {
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .header {
       background-image: url(/images/bg-curvy-mobile.svg); } }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .header__illustration {
       margin-bottom: 6rem;
       width: 80vw;
@@ -431,7 +454,7 @@ body {
     max-width: 65%;
     text-align: center;
     z-index: 100; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .header__text-box {
         max-width: 90%; } }
   .header__paragraph {
@@ -443,13 +466,13 @@ body {
   display: flex;
   align-items: center;
   margin: 0 5rem; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .logo-box {
       margin: 0 3rem; } }
 
 .logo {
   height: 4.25rem; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .logo {
       height: 3.75rem; } }
 
@@ -460,7 +483,7 @@ body {
   font-size: 1.4rem;
   margin-bottom: 5rem;
   font-family: 'Raleway', sans-serif; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .nav-bar {
       font-size: 1.9rem; } }
   .nav-bar__list {
@@ -479,14 +502,14 @@ body {
     padding: 1.2rem;
     transition: all 0.2s;
     border-radius: 10px; }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .nav-bar__link:link, .nav-bar__link:visited {
         padding: 0; } }
   .nav-bar__link:hover {
     transform: translateY(-2px);
     background-position: 100%;
     box-shadow: var(--box-shadow-hover); }
-    @media only screen and (max-width: 23.5em) {
+    @media only screen and (max-width: 37.5em) {
       .nav-bar__link:hover {
         transform: none;
         background-position: 0 0;
@@ -500,7 +523,7 @@ body {
   justify-content: center;
   position: relative;
   box-shadow: var(--box-shadow-hover); }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .testimonials {
       flex-direction: column; } }
 
@@ -508,11 +531,15 @@ body {
   position: absolute;
   left: 8rem;
   top: 15.7rem; }
-  @media only screen and (max-width: 23.5em) {
+  @media only screen and (max-width: 37.5em) {
     .icon__quotes {
       width: 5.5rem;
       left: 3rem;
       top: 15.7rem; } }
+  @media only screen and (max-width: 55em) {
+    .icon__quotes {
+      left: 4.75rem;
+      top: 14.7rem; } }
 
 .section-features,
 .section-cta,

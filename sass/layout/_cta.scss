@@ -12,6 +12,10 @@
 		max-width: 100%;
 	}
 
+	@include respond(smaller-size-55) {
+		flex-direction: column;
+	}
+
 	@include respond(phone) {
 		display: block;
 		max-width: 90%;
@@ -19,6 +23,10 @@
 
 	&__illustration {
 		@include respond(phone) {
+		}
+
+		@include respond(smaller-size-55) {
+			width: 80vw;
 			display: block;
 			margin: 0 auto 10rem auto;
 			width: 80vw;
@@ -30,6 +38,10 @@
 		max-width: 40%;
 		align-self: center;
 
+		@include respond(smaller-size-55) {
+			max-width: 65%;
+		}
+
 		@include respond(phone) {
 			max-width: 100%;
 		}
@@ -38,6 +50,10 @@
 	&__paragraph {
 		font-size: 1.5rem;
 		margin-bottom: 3rem;
+
+		@include respond(smaller-size-55) {
+			font-size: 1.75rem;
+		}
 
 		@include respond(phone) {
 			font-size: 2.25rem;

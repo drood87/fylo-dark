@@ -22,18 +22,18 @@
 
 @mixin respond($breakpoint) {
 	@if $breakpoint == phone {
-		@media only screen and (max-width: 23.5em) {
+		@media only screen and (max-width: 37.5em) {
 			//max-width <= 375px
 			@content;
 		}
 	}
 
-	// @if $breakpoint == smaller-size {
-	// 	@media only screen and (max-width: 55em) {
-	// 		//max- width: 880px
-	// 		@content;
-	// 	}
-	// }
+	@if $breakpoint == smaller-size-55 {
+		@media only screen and (max-width: 55em) {
+			//max- width: 880px
+			@content;
+		}
+	}
 
 	@if $breakpoint == small-size {
 		@media only screen and (max-width: 62.5em) {

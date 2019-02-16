@@ -122,9 +122,15 @@
 		font-size: 1.3rem;
 	}
 
+	@include respond(smaller-size-55) {
+		font-size: 1.75rem;
+		padding: 2rem;
+		flex: 1 0 100%;
+	}
+
 	@include respond(phone) {
 		font-size: 2rem;
-		padding: 2rem 2rem 2rem 2rem;
+		padding: 2rem;
 		flex: 1 0 100%;
 	}
 
